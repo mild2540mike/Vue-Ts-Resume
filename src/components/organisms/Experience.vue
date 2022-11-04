@@ -2,22 +2,22 @@
 <section class="my-36 grid grid-cols-2" id="experience">
     <!-- <img src="../../assets/img/about/m5.JPG" class="hidden lg:flex max-w-[25rem] ml-16" /> -->
     <div class="grid grid-flow-col grid-rows-2 grid-cols-3 gap-8">
-                <div class="transform scale-110 -rotate-6">
-                    <img class="hover:opacity-25 cursor-pointer" src="../../assets/img/project/other/1 (5).JPG" alt="" loading="lazy">
-                </div>
-                <div class="col-start-3 transform scale-75 rotate-6 translate-x-2 translate-y-15">
-                    <img class="hover:opacity-25 cursor-pointer" src="../../assets/img/project/other/1 (6).JPG" alt="" loading="lazy">
-                </div>
-                <div class="transform scale-150 translate-y-11">
-                    <img class="hover:opacity-25 cursor-pointer" src="../../assets/img/project/other/1 (4).JPG" alt="" loading="lazy">
-                </div>
-                <div class="transform translate-y-24">
-                    <img class="hover:opacity-25 cursor-pointer" src="../../assets/img/project/other/1 (1).JPG" alt="" loading="lazy">
-                </div>
-                <div class="row-start-1 col-start-2 col-span-2 transform translate-x-20 translate-y-4 bg-light-blue-600 opacity-25">
-                    <img class="hover:opacity-25 cursor-pointer" src="../../assets/img/project/other/1 (3).JPG" alt="" loading="lazy">
-                </div>
-            </div>
+        <div class="transform scale-110 -rotate-6">
+            <Image src="../../assets/img/project/other/1 (5).JPG" />
+        </div>
+        <div class="col-start-3 transform scale-75 rotate-6 translate-x-2 translate-y-15">
+            <Image src="../../assets/img/project/other/1 (6).JPG" />
+        </div>
+        <div class="transform scale-150 translate-y-11">
+            <Image src="../../assets/img/project/other/1 (4).JPG" />
+        </div>
+        <div class="transform translate-y-24">
+            <Image src="../../assets/img/project/other/1 (1).JPG" />
+        </div>
+        <div class="row-start-1 col-start-2 col-span-2 transform translate-x-20 translate-y-4 bg-light-blue-600 opacity-25">
+            <Image src="../../assets/img/project/other/1 (3).JPG" />
+        </div>
+    </div>
 
     <ol class="relative border-l border-gray-200 dark:border-gray-700">
         <li class="mb-10 ml-4">
@@ -72,8 +72,9 @@
 import {
     defineComponent
 } from 'vue'
+import Image from '../atoms/Image.vue'
 
 export default defineComponent({
-    methods: {}
+    components: Image,
 })
 </script>

@@ -6,25 +6,11 @@
       title="ความคาดหวัง"
       text="ตำแหน่งงานที่สนใจ"
       alt="..."
-      
     />
-    
-
     <Advantages />
     <Testimonial />
-    
     <Experience />
-
-    <!-- <Section
-      title="ประสบการณ์ทำงาน"
-      text="ประสบการณ์ทำงาน"
-      :imgSrc="coursesImg"
-      alt="Página de cursos online"
-      reverse
-    /> -->
-
     <Contact />
-<!-- <div class="elfsight-app-abdb58e2-bb8d-40f5-8514-8d14198d9f2c"></div> -->
   </main>
 </template>
 

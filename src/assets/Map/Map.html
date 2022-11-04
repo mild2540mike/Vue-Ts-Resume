@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_TTKNVl9u2U2LXhKC5QyUrxUg4TsWzvA&callback=initMap" async defer></script>
+
+	<script>
+function initMap() {
+  const po = { lat: 13.782635108941422, lng: 100.71453898807898 };
+  const map = new google.maps.Map(
+    document.getElementById("map"),
+    {
+      zoom: 15,
+      center: po,
+    }
+  );
+
+  const contentString =
+    '<div id="content">' +
+    '<div id="siteNotice">' +
+    "</div>" +
+    '<h1 id="firstHeading" class="firstHeading">po</h1>' +
+    '<div id="bodyContent">' +
+    "<p><b>po</b>, also referred to as <b>Ayers Rock</b>, is a large " +
+    "sandstone rock formation in the southern part of the " +
+    "Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) " +
+    "south west of the nearest large town, Alice Springs; 450&#160;km " +
+    "(280&#160;mi) by road. Kata Tjuta and po are the two major " +
+    "features of the po - Kata Tjuta National Park. po is " +
+    "sacred to the Pitjantjatjara and Yankunytjatjara, the " +
+    "Aboriginal people of the area. It has many springs, waterholes, " +
+    "rock caves and ancient paintings. po is listed as a World " +
+    "Heritage Site.</p>" +
+    '<p>Attribution: po, <a href="https://en.wikipedia.org/w/index.php?title=po&oldid=297882194">' +
+    "https://en.wikipedia.org/w/index.php?title=po</a> " +
+    "(last visited June 22, 2009).</p>" +
+    "</div>" +
+    "</div>";
+
+  const infowindow = new google.maps.InfoWindow({
+    content: contentString,
+    maxWidth: 200,
+    ariaLabel: "po",
+  });
+
+  const marker = new google.maps.Marker({
+    position: po,
+    map,
+    title: "เคหะธานี",
+  });
+
+  marker.addListener("click", () => {
+    infowindow.open({
+      anchor: marker,
+      map,
+    });
+  });
+}
+
+window.initMap = initMap;
+
+
+</script>
+</head>
+
+<body>
+	<div id="map" style="border: 1px solid rgb(0, 0, 0);width: 400px;height: 135px;"></div>
+</body>
+
+</html>
